@@ -4,14 +4,14 @@ EXTRA_PROGRAMS = multistresstest
 INCLUDES =	-DPROJ_LIB=\"$(pkgdatadir)\" \
 		-DMUTEX_@MUTEX_SETTING@ @JNI_INCLUDE@
 
-include_HEADERS = proj_api.h org_proj4_Projections.h
+include_HEADERS = proj_api.h org_proj4_Projections.h org_proj4_PJ.h geodesic.h
 
 EXTRA_DIST = makefile.vc proj.def
 
 proj_SOURCES = proj.c gen_cheb.c p_series.c
 cs2cs_SOURCES = cs2cs.c gen_cheb.c p_series.c
 nad2bin_SOURCES = nad2bin.c
-geod_SOURCES = geod.c geod_set.c geod_for.c geod_inv.c geodesic.h
+geod_SOURCES = geod.c geod_set.c geod_interface.c geod_interface.h
 multistresstest_SOURCES = multistresstest.c
 
 proj_LDADD = libproj.la
@@ -22,7 +22,7 @@ multistresstest_LDADD = libproj.la -lpthread
 
 lib_LTLIBRARIES = libproj.la
 
-libproj_la_LDFLAGS = -no-undefined -version-info 7:0:7
+libproj_la_LDFLAGS = -no-undefined -version-info 8:0:8
 
 libproj_la_SOURCES = \
 	projects.h pj_list.h \
@@ -57,13 +57,13 @@ libproj_la_SOURCES = \
 	pj_open_lib.c pj_param.c pj_phi2.c pj_pr_list.c \
 	pj_qsfn.c pj_strerrno.c pj_tsfn.c pj_units.c pj_ctx.c pj_log.c \
 	pj_zpoly1.c rtodms.c vector1.c pj_release.c pj_gauss.c \
-	PJ_healpix.c PJ_natearth.c \
+	PJ_healpix.c PJ_natearth.c PJ_calcofi.c pj_fileapi.c \
 	\
+	pj_gc_reader.c pj_gridcatalog.c \
 	nad_cvt.c nad_init.c nad_intr.c emess.c emess.h \
 	pj_apply_gridshift.c pj_datums.c pj_datum_set.c pj_transform.c \
 	geocent.c geocent.h pj_utils.c pj_gridinfo.c pj_gridlist.c \
-	jniproj.c pj_mutex.c pj_initcache.c pj_apply_vgridshift.c
-
+	jniproj.c pj_mutex.c pj_initcache.c pj_apply_vgridshift.c geodesic.c
 
 install-exec-local:
 	rm -f $(DESTDIR)$(bindir)/invproj$(EXEEXT)

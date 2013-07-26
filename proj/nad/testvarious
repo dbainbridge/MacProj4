@@ -245,6 +245,14 @@ $EXE +proj=latlong +datum=WGS84 \
  -E >>${OUT} <<EOF
 -30 40 
 -35 45
+20 40
+EOF
+$EXE +proj=robin +datum=WGS84 \
+ +to +proj=latlong +datum=WGS84 \
+ -E >>${OUT} <<EOF
+-2612095.95     4276351.58 0.00
+-2963455.42     4805073.65 0.00
+1741397.30      4276351.58 0.00
 EOF
 echo "##############################################################" >> ${OUT}
 echo "Test forward projection on sphere" >> ${OUT}
@@ -414,6 +422,32 @@ $EXE +proj=pconic  +units=m +lat_1=20n +lat_2=60n +lon_0=60W +datum=WGS84 \
  +to +proj=latlong +datum=WGS84 \
  -E >>${OUT} <<EOF
 -2240096.40 -6940342.15
+EOF
+echo "##############################################################" >> ${OUT}
+echo "Test laea" >> ${OUT}
+#
+$EXE -f '%.14f' \
+     +proj=laea +lat_0=45 +lon_0=-100 +units=m +datum=WGS84 +no_defs \
+ +to +proj=latlong +datum=WGS84 \
+ -E >>${OUT} <<EOF
+-6086629.0 4488761.0
+EOF
+echo "##############################################################" >> ${OUT}
+echo "Test forward calcofi projection" >> ${OUT}
+$EXE +proj=latlong +ellps=clrk66 \
+ +to +proj=calcofi +ellps=clrk66 \
+ -E >>${OUT} <<EOF
+120d40'42.273"W	38d56'50.766"N
+121d9'W	34d9'N
+123d59'56.066"W	30d25'4.617"N
+EOF
+echo "Test inverse calcofi projection" >> ${OUT}
+$EXE +proj=calcofi +ellps=clrk66 \
+ +to +proj=longlat +ellps=clrk66 \
+ -E >>${OUT} <<EOF
+60 20
+80 60 
+90 120
 EOF
 ##############################################################################
 # Done! 

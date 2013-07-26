@@ -102,11 +102,12 @@ am_libproj_la_OBJECTS = PJ_aeqd.lo PJ_gnom.lo PJ_laea.lo \
 	pj_open_lib.lo pj_param.lo pj_phi2.lo pj_pr_list.lo pj_qsfn.lo \
 	pj_strerrno.lo pj_tsfn.lo pj_units.lo pj_ctx.lo pj_log.lo \
 	pj_zpoly1.lo rtodms.lo vector1.lo pj_release.lo pj_gauss.lo \
-	PJ_healpix.lo PJ_natearth.lo nad_cvt.lo nad_init.lo \
+	PJ_healpix.lo PJ_natearth.lo PJ_calcofi.lo pj_fileapi.lo \
+	pj_gc_reader.lo pj_gridcatalog.lo nad_cvt.lo nad_init.lo \
 	nad_intr.lo emess.lo pj_apply_gridshift.lo pj_datums.lo \
 	pj_datum_set.lo pj_transform.lo geocent.lo pj_utils.lo \
 	pj_gridinfo.lo pj_gridlist.lo jniproj.lo pj_mutex.lo \
-	pj_initcache.lo pj_apply_vgridshift.lo
+	pj_initcache.lo pj_apply_vgridshift.lo geodesic.lo
 libproj_la_OBJECTS = $(am_libproj_la_OBJECTS)
 libproj_la_LINK = $(LIBTOOL) --tag=CC $(AM_LIBTOOLFLAGS) \
 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
@@ -116,8 +117,8 @@ am_cs2cs_OBJECTS = cs2cs.$(OBJEXT) gen_cheb.$(OBJEXT) \
 	p_series.$(OBJEXT)
 cs2cs_OBJECTS = $(am_cs2cs_OBJECTS)
 cs2cs_DEPENDENCIES = libproj.la
-am_geod_OBJECTS = geod.$(OBJEXT) geod_set.$(OBJEXT) geod_for.$(OBJEXT) \
-	geod_inv.$(OBJEXT)
+am_geod_OBJECTS = geod.$(OBJEXT) geod_set.$(OBJEXT) \
+	geod_interface.$(OBJEXT)
 geod_OBJECTS = $(am_geod_OBJECTS)
 geod_DEPENDENCIES = libproj.la
 am_multistresstest_OBJECTS = multistresstest.$(OBJEXT)
@@ -269,12 +270,12 @@ top_srcdir = @top_srcdir@
 INCLUDES = -DPROJ_LIB=\"$(pkgdatadir)\" \
 		-DMUTEX_@MUTEX_SETTING@ @JNI_INCLUDE@
 
-include_HEADERS = proj_api.h org_proj4_Projections.h
+include_HEADERS = proj_api.h org_proj4_Projections.h org_proj4_PJ.h geodesic.h
 EXTRA_DIST = makefile.vc proj.def
 proj_SOURCES = proj.c gen_cheb.c p_series.c
 cs2cs_SOURCES = cs2cs.c gen_cheb.c p_series.c
 nad2bin_SOURCES = nad2bin.c
-geod_SOURCES = geod.c geod_set.c geod_for.c geod_inv.c geodesic.h
+geod_SOURCES = geod.c geod_set.c geod_interface.c geod_interface.h
 multistresstest_SOURCES = multistresstest.c
 proj_LDADD = libproj.la
 cs2cs_LDADD = libproj.la
@@ -282,7 +283,7 @@ nad2bin_LDADD = libproj.la
 geod_LDADD = libproj.la
 multistresstest_LDADD = libproj.la -lpthread
 lib_LTLIBRARIES = libproj.la
-libproj_la_LDFLAGS = -no-undefined -version-info 7:0:7
+libproj_la_LDFLAGS = -no-undefined -version-info 8:0:8
 libproj_la_SOURCES = \
 	projects.h pj_list.h \
 	PJ_aeqd.c PJ_gnom.c PJ_laea.c PJ_mod_ster.c \
@@ -316,12 +317,13 @@ libproj_la_SOURCES = \
 	pj_open_lib.c pj_param.c pj_phi2.c pj_pr_list.c \
 	pj_qsfn.c pj_strerrno.c pj_tsfn.c pj_units.c pj_ctx.c pj_log.c \
 	pj_zpoly1.c rtodms.c vector1.c pj_release.c pj_gauss.c \
-	PJ_healpix.c PJ_natearth.c \
+	PJ_healpix.c PJ_natearth.c PJ_calcofi.c pj_fileapi.c \
 	\
+	pj_gc_reader.c pj_gridcatalog.c \
 	nad_cvt.c nad_init.c nad_intr.c emess.c emess.h \
 	pj_apply_gridshift.c pj_datums.c pj_datum_set.c pj_transform.c \
 	geocent.c geocent.h pj_utils.c pj_gridinfo.c pj_gridlist.c \
-	jniproj.c pj_mutex.c pj_initcache.c pj_apply_vgridshift.c
+	jniproj.c pj_mutex.c pj_initcache.c pj_apply_vgridshift.c geodesic.c
 
 all: proj_config.h
 	$(MAKE) $(AM_MAKEFLAGS) all-am
@@ -482,6 +484,7 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_bipc.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_boggs.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_bonne.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_calcofi.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_cass.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_cc.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/PJ_cea.Plo@am__quote@
@@ -577,9 +580,9 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/gen_cheb.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geocent.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geod.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geod_for.Po@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geod_inv.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geod_interface.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geod_set.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/geodesic.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/jniproj.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/mk_cheby.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/multistresstest.Po@am__quote@
@@ -599,9 +602,12 @@ distclean-compile:
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_ellps.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_errno.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_factors.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_fileapi.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_fwd.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_gauss.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_gc_reader.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_geocent.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_gridcatalog.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_gridinfo.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_gridlist.Plo@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/pj_init.Plo@am__quote@

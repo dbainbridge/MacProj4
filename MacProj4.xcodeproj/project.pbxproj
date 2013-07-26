@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469A188517A2456C00C28755 /* geod_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188317A2456C00C28755 /* geod_interface.c */; };
+		469A188617A2456C00C28755 /* geod_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 469A188417A2456C00C28755 /* geod_interface.h */; };
+		469A188917A245BE00C28755 /* geodesic.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188817A245BE00C28755 /* geodesic.c */; };
+		469A188B17A2468300C28755 /* PJ_calcofi.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188A17A2468300C28755 /* PJ_calcofi.c */; };
+		469A188D17A246F300C28755 /* pj_fileapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188C17A246F300C28755 /* pj_fileapi.c */; };
+		469A189017A2474100C28755 /* pj_gc_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188E17A2474100C28755 /* pj_gc_reader.c */; };
+		469A189117A2474100C28755 /* pj_gridcatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188F17A2474100C28755 /* pj_gridcatalog.c */; };
 		46E98CCF177A5740004C82C1 /* jniproj.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CC6177A5740004C82C1 /* jniproj.c */; };
 		46E98CD0177A5740004C82C1 /* org_proj4_Projections.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC7177A5740004C82C1 /* org_proj4_Projections.h */; };
 		46E98CD1177A5740004C82C1 /* proj_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC8177A5740004C82C1 /* proj_api.h */; };
@@ -28,8 +35,6 @@
 		46E98D02177A58CE004C82C1 /* biveval.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE8177A58CE004C82C1 /* biveval.c */; };
 		46E98D04177A58CE004C82C1 /* emess.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CEA177A58CE004C82C1 /* emess.h */; };
 		46E98D05177A58CE004C82C1 /* geocent.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CEB177A58CE004C82C1 /* geocent.h */; };
-		46E98D06177A58CE004C82C1 /* geod_for.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CEC177A58CE004C82C1 /* geod_for.c */; };
-		46E98D07177A58CE004C82C1 /* geod_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CED177A58CE004C82C1 /* geod_inv.c */; };
 		46E98D08177A58CE004C82C1 /* geod_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CEE177A58CE004C82C1 /* geod_set.c */; };
 		46E98D0A177A58CE004C82C1 /* geodesic.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CF0177A58CE004C82C1 /* geodesic.h */; };
 		46E98D0C177A58CE004C82C1 /* nad_cvt.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF2177A58CE004C82C1 /* nad_cvt.c */; };
@@ -173,6 +178,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		469A188317A2456C00C28755 /* geod_interface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = geod_interface.c; path = ../../../Proj.4/proj/src/geod_interface.c; sourceTree = "<group>"; };
+		469A188417A2456C00C28755 /* geod_interface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = geod_interface.h; path = ../../../Proj.4/proj/src/geod_interface.h; sourceTree = "<group>"; };
+		469A188817A245BE00C28755 /* geodesic.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = geodesic.c; path = ../../../Proj.4/proj/src/geodesic.c; sourceTree = "<group>"; };
+		469A188A17A2468300C28755 /* PJ_calcofi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = PJ_calcofi.c; path = ../../../Proj.4/proj/src/PJ_calcofi.c; sourceTree = "<group>"; };
+		469A188C17A246F300C28755 /* pj_fileapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_fileapi.c; sourceTree = "<group>"; };
+		469A188E17A2474100C28755 /* pj_gc_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_gc_reader.c; sourceTree = "<group>"; };
+		469A188F17A2474100C28755 /* pj_gridcatalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_gridcatalog.c; sourceTree = "<group>"; };
 		46E98CBE177A54BE004C82C1 /* libproj.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libproj.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E98CC6177A5740004C82C1 /* jniproj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jniproj.c; sourceTree = "<group>"; };
 		46E98CC7177A5740004C82C1 /* org_proj4_Projections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_proj4_Projections.h; sourceTree = "<group>"; };
@@ -198,8 +210,6 @@
 		46E98CE9177A58CE004C82C1 /* cs2cs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cs2cs.c; sourceTree = "<group>"; };
 		46E98CEA177A58CE004C82C1 /* emess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emess.h; sourceTree = "<group>"; };
 		46E98CEB177A58CE004C82C1 /* geocent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geocent.h; sourceTree = "<group>"; };
-		46E98CEC177A58CE004C82C1 /* geod_for.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geod_for.c; sourceTree = "<group>"; };
-		46E98CED177A58CE004C82C1 /* geod_inv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geod_inv.c; sourceTree = "<group>"; };
 		46E98CEE177A58CE004C82C1 /* geod_set.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geod_set.c; sourceTree = "<group>"; };
 		46E98CEF177A58CE004C82C1 /* geod.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = geod.c; sourceTree = "<group>"; };
 		46E98CF0177A58CE004C82C1 /* geodesic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = geodesic.h; sourceTree = "<group>"; };
@@ -356,6 +366,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		469A188717A245A600C28755 /* geod */ = {
+			isa = PBXGroup;
+			children = (
+				46E98CEB177A58CE004C82C1 /* geocent.h */,
+				469A188317A2456C00C28755 /* geod_interface.c */,
+				469A188417A2456C00C28755 /* geod_interface.h */,
+				46E98CEE177A58CE004C82C1 /* geod_set.c */,
+				46E98CEF177A58CE004C82C1 /* geod.c */,
+				46E98CF0177A58CE004C82C1 /* geodesic.h */,
+				469A188817A245BE00C28755 /* geodesic.c */,
+			);
+			name = geod;
+			sourceTree = "<group>";
+		};
 		46E98CB5177A54BE004C82C1 = {
 			isa = PBXGroup;
 			children = (
@@ -398,12 +422,7 @@
 				46E98CE8177A58CE004C82C1 /* biveval.c */,
 				46E98CE9177A58CE004C82C1 /* cs2cs.c */,
 				46E98CEA177A58CE004C82C1 /* emess.h */,
-				46E98CEB177A58CE004C82C1 /* geocent.h */,
-				46E98CEC177A58CE004C82C1 /* geod_for.c */,
-				46E98CED177A58CE004C82C1 /* geod_inv.c */,
-				46E98CEE177A58CE004C82C1 /* geod_set.c */,
-				46E98CEF177A58CE004C82C1 /* geod.c */,
-				46E98CF0177A58CE004C82C1 /* geodesic.h */,
+				469A188717A245A600C28755 /* geod */,
 				46E98CF1177A58CE004C82C1 /* multistresstest.c */,
 				46E98CF2177A58CE004C82C1 /* nad_cvt.c */,
 				46E98CF3177A58CE004C82C1 /* nad_init.c */,
@@ -418,10 +437,13 @@
 				46E98CFC177A58CE004C82C1 /* pj_apply_vgridshift.c */,
 				46E98CFD177A58CE004C82C1 /* PJ_august.c */,
 				46E98D18177A58EB004C82C1 /* pj_auth.c */,
+				469A188E17A2474100C28755 /* pj_gc_reader.c */,
+				469A188F17A2474100C28755 /* pj_gridcatalog.c */,
 				46E98D19177A58EB004C82C1 /* PJ_bacon.c */,
 				46E98D1A177A58EB004C82C1 /* PJ_bipc.c */,
 				46E98D1B177A58EB004C82C1 /* PJ_boggs.c */,
 				46E98D1C177A58EB004C82C1 /* PJ_bonne.c */,
+				469A188A17A2468300C28755 /* PJ_calcofi.c */,
 				46E98D1D177A58EB004C82C1 /* PJ_cass.c */,
 				46E98D1E177A58EB004C82C1 /* PJ_cc.c */,
 				46E98D1F177A58EB004C82C1 /* PJ_cea.c */,
@@ -445,6 +467,7 @@
 				46E98D31177A58EB004C82C1 /* pj_errno.c */,
 				46E98D32177A58EB004C82C1 /* pj_factors.c */,
 				46E98D33177A58EB004C82C1 /* PJ_fahey.c */,
+				469A188C17A246F300C28755 /* pj_fileapi.c */,
 				46E98D34177A58EB004C82C1 /* PJ_fouc_s.c */,
 				46E98D35177A58EB004C82C1 /* pj_fwd.c */,
 				46E98D36177A58EB004C82C1 /* PJ_gall.c */,
@@ -557,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E98CD1177A5740004C82C1 /* proj_api.h in Headers */,
+				469A188617A2456C00C28755 /* geod_interface.h in Headers */,
 				46E98D04177A58CE004C82C1 /* emess.h in Headers */,
 				46E98CD5177A5740004C82C1 /* projects.h in Headers */,
 				46E98CD0177A5740004C82C1 /* org_proj4_Projections.h in Headers */,
@@ -640,7 +664,6 @@
 				46E98DA9177A58EB004C82C1 /* PJ_eck3.c in Sources */,
 				46E98D12177A58CE004C82C1 /* PJ_aeqd.c in Sources */,
 				46E98D00177A58CE004C82C1 /* bch2bps.c in Sources */,
-				46E98D07177A58CE004C82C1 /* geod_inv.c in Sources */,
 				46E98E09177A58EB004C82C1 /* PJ_urmfps.c in Sources */,
 				46E98DF6177A58EB004C82C1 /* PJ_putp6.c in Sources */,
 				46E98D0C177A58CE004C82C1 /* nad_cvt.c in Sources */,
@@ -656,6 +679,7 @@
 				46E98DF9177A58EB004C82C1 /* PJ_robin.c in Sources */,
 				46E98D9E177A58EB004C82C1 /* PJ_cea.c in Sources */,
 				46E98CD4177A5740004C82C1 /* proj.c in Sources */,
+				469A188D17A246F300C28755 /* pj_fileapi.c in Sources */,
 				46E98E10177A58EB004C82C1 /* PJ_wag7.c in Sources */,
 				46E98E08177A58EB004C82C1 /* PJ_urm5.c in Sources */,
 				46E98D17177A58CE004C82C1 /* PJ_august.c in Sources */,
@@ -714,6 +738,7 @@
 				46E98DF4177A58EB004C82C1 /* PJ_putp4p.c in Sources */,
 				46E98E14177A58EB004C82C1 /* rtodms.c in Sources */,
 				46E98E04177A58EB004C82C1 /* PJ_tpeqd.c in Sources */,
+				469A189117A2474100C28755 /* pj_gridcatalog.c in Sources */,
 				46E98DF7177A58EB004C82C1 /* pj_qsfn.c in Sources */,
 				46E98DD9177A58EB004C82C1 /* PJ_mbtfpp.c in Sources */,
 				46E98DF5177A58EB004C82C1 /* PJ_putp5.c in Sources */,
@@ -721,6 +746,7 @@
 				46E98DDC177A58EB004C82C1 /* PJ_mill.c in Sources */,
 				46E98E01177A58EB004C82C1 /* PJ_tcc.c in Sources */,
 				46E98CCF177A5740004C82C1 /* jniproj.c in Sources */,
+				469A188917A245BE00C28755 /* geodesic.c in Sources */,
 				46E98D15177A58CE004C82C1 /* pj_apply_gridshift.c in Sources */,
 				46E98DB9177A58EB004C82C1 /* PJ_gins8.c in Sources */,
 				46E98DAB177A58EB004C82C1 /* PJ_eck5.c in Sources */,
@@ -737,6 +763,7 @@
 				46E98D9C177A58EB004C82C1 /* PJ_cass.c in Sources */,
 				46E98D11177A58CE004C82C1 /* PJ_aea.c in Sources */,
 				46E98DF3177A58EB004C82C1 /* PJ_putp3.c in Sources */,
+				469A189017A2474100C28755 /* pj_gc_reader.c in Sources */,
 				46E98D98177A58EB004C82C1 /* PJ_bacon.c in Sources */,
 				46E98DC6177A58EB004C82C1 /* pj_initcache.c in Sources */,
 				46E98DE8177A58EB004C82C1 /* PJ_ob_tran.c in Sources */,
@@ -749,6 +776,7 @@
 				46E98DD5177A58EB004C82C1 /* PJ_loxim.c in Sources */,
 				46E98E15177A58EB004C82C1 /* vector1.c in Sources */,
 				46E98DFC177A58EB004C82C1 /* PJ_somerc.c in Sources */,
+				469A188B17A2468300C28755 /* PJ_calcofi.c in Sources */,
 				46E98DE9177A58EB004C82C1 /* PJ_ocea.c in Sources */,
 				46E98DA0177A58EB004C82C1 /* PJ_collg.c in Sources */,
 				46E98E12177A58EB004C82C1 /* PJ_wink2.c in Sources */,
@@ -761,7 +789,7 @@
 				46E98DEE177A58EB004C82C1 /* pj_param.c in Sources */,
 				46E98DB7177A58EB004C82C1 /* pj_geocent.c in Sources */,
 				46E98D08177A58CE004C82C1 /* geod_set.c in Sources */,
-				46E98D06177A58CE004C82C1 /* geod_for.c in Sources */,
+				469A188517A2456C00C28755 /* geod_interface.c in Sources */,
 				46E98DFD177A58EB004C82C1 /* PJ_stere.c in Sources */,
 				46E98DAF177A58EB004C82C1 /* PJ_eqdc.c in Sources */,
 				46E98E13177A58EB004C82C1 /* pj_zpoly1.c in Sources */,
