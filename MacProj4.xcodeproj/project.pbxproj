@@ -14,6 +14,174 @@
 		469A188D17A246F300C28755 /* pj_fileapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188C17A246F300C28755 /* pj_fileapi.c */; };
 		469A189017A2474100C28755 /* pj_gc_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188E17A2474100C28755 /* pj_gc_reader.c */; };
 		469A189117A2474100C28755 /* pj_gridcatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188F17A2474100C28755 /* pj_gridcatalog.c */; };
+		46DDE41317A338F200A8528F /* pj_strerrno.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D80177A58EB004C82C1 /* pj_strerrno.c */; };
+		46DDE41417A338F200A8528F /* pj_fwd.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D35177A58EB004C82C1 /* pj_fwd.c */; };
+		46DDE41517A338F200A8528F /* pj_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D53177A58EB004C82C1 /* pj_list.c */; };
+		46DDE41617A338F200A8528F /* PJ_boggs.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1B177A58EB004C82C1 /* PJ_boggs.c */; };
+		46DDE41717A338F200A8528F /* PJ_nell.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D65177A58EB004C82C1 /* PJ_nell.c */; };
+		46DDE41817A338F200A8528F /* PJ_bipc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1A177A58EB004C82C1 /* PJ_bipc.c */; };
+		46DDE41917A338F200A8528F /* proj_mdist.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CCA177A5740004C82C1 /* proj_mdist.c */; };
+		46DDE41A17A338F200A8528F /* PJ_lask.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4F177A58EB004C82C1 /* PJ_lask.c */; };
+		46DDE41B17A338F200A8528F /* PJ_vandg.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8C177A58EB004C82C1 /* PJ_vandg.c */; };
+		46DDE41C17A338F200A8528F /* PJ_lsat.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D57177A58EB004C82C1 /* PJ_lsat.c */; };
+		46DDE41D17A338F200A8528F /* pj_release.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D79177A58EB004C82C1 /* pj_release.c */; };
+		46DDE41E17A338F200A8528F /* pj_open_lib.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6D177A58EB004C82C1 /* pj_open_lib.c */; };
+		46DDE41F17A338F200A8528F /* pj_mutex.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D62177A58EB004C82C1 /* pj_mutex.c */; };
+		46DDE42017A338F200A8528F /* pj_ellps.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2E177A58EB004C82C1 /* pj_ellps.c */; };
+		46DDE42117A338F200A8528F /* pj_tsfn.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D87177A58EB004C82C1 /* pj_tsfn.c */; };
+		46DDE42217A338F200A8528F /* pj_datum_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D24177A58EB004C82C1 /* pj_datum_set.c */; };
+		46DDE42317A338F200A8528F /* PJ_rpoly.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7B177A58EB004C82C1 /* PJ_rpoly.c */; };
+		46DDE42417A338F200A8528F /* PJ_isea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D49177A58EB004C82C1 /* PJ_isea.c */; };
+		46DDE42517A338F200A8528F /* pj_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D46177A58EB004C82C1 /* pj_init.c */; };
+		46DDE42617A338F200A8528F /* PJ_eck3.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2A177A58EB004C82C1 /* PJ_eck3.c */; };
+		46DDE42717A338F200A8528F /* PJ_aeqd.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF8177A58CE004C82C1 /* PJ_aeqd.c */; };
+		46DDE42817A338F200A8528F /* bch2bps.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE6177A58CE004C82C1 /* bch2bps.c */; };
+		46DDE42917A338F200A8528F /* PJ_urmfps.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8A177A58EB004C82C1 /* PJ_urmfps.c */; };
+		46DDE42A17A338F200A8528F /* PJ_putp6.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D77177A58EB004C82C1 /* PJ_putp6.c */; };
+		46DDE42B17A338F200A8528F /* nad_cvt.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF2177A58CE004C82C1 /* nad_cvt.c */; };
+		46DDE42C17A338F200A8528F /* biveval.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE8177A58CE004C82C1 /* biveval.c */; };
+		46DDE42D17A338F200A8528F /* PJ_eck4.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2B177A58EB004C82C1 /* PJ_eck4.c */; };
+		46DDE42E17A338F200A8528F /* PJ_sterea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7F177A58EB004C82C1 /* PJ_sterea.c */; };
+		46DDE42F17A338F200A8528F /* pj_gauss.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D37177A58EB004C82C1 /* pj_gauss.c */; };
+		46DDE43017A338F200A8528F /* proj_rouss.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CCB177A5740004C82C1 /* proj_rouss.c */; };
+		46DDE43117A338F200A8528F /* PJ_oea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6B177A58EB004C82C1 /* PJ_oea.c */; };
+		46DDE43217A338F200A8528F /* PJ_aitoff.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CFA177A58CE004C82C1 /* PJ_aitoff.c */; };
+		46DDE43317A338F200A8528F /* p_series.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF6177A58CE004C82C1 /* p_series.c */; };
+		46DDE43417A338F200A8528F /* PJ_vandg2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8D177A58EB004C82C1 /* PJ_vandg2.c */; };
+		46DDE43517A338F200A8528F /* PJ_robin.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7A177A58EB004C82C1 /* PJ_robin.c */; };
+		46DDE43617A338F200A8528F /* PJ_cea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1F177A58EB004C82C1 /* PJ_cea.c */; };
+		46DDE43717A338F200A8528F /* proj.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CCC177A5740004C82C1 /* proj.c */; };
+		46DDE43817A338F200A8528F /* pj_fileapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188C17A246F300C28755 /* pj_fileapi.c */; };
+		46DDE43917A338F200A8528F /* PJ_wag7.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D91177A58EB004C82C1 /* PJ_wag7.c */; };
+		46DDE43A17A338F200A8528F /* PJ_urm5.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D89177A58EB004C82C1 /* PJ_urm5.c */; };
+		46DDE43B17A338F200A8528F /* PJ_august.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CFD177A58CE004C82C1 /* PJ_august.c */; };
+		46DDE43C17A338F200A8528F /* PJ_nsper.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D67177A58EB004C82C1 /* PJ_nsper.c */; };
+		46DDE43D17A338F200A8528F /* pj_deriv.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D27177A58EB004C82C1 /* pj_deriv.c */; };
+		46DDE43E17A338F200A8528F /* PJ_fouc_s.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D34177A58EB004C82C1 /* PJ_fouc_s.c */; };
+		46DDE43F17A338F200A8528F /* nad_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF3177A58CE004C82C1 /* nad_init.c */; };
+		46DDE44017A338F200A8528F /* PJ_labrd.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4B177A58EB004C82C1 /* PJ_labrd.c */; };
+		46DDE44117A338F200A8528F /* mk_cheby.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE2177A5897004C82C1 /* mk_cheby.c */; };
+		46DDE44217A338F200A8528F /* PJ_lagrng.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4D177A58EB004C82C1 /* PJ_lagrng.c */; };
+		46DDE44317A338F200A8528F /* PJ_hammer.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D41177A58EB004C82C1 /* PJ_hammer.c */; };
+		46DDE44417A338F200A8528F /* PJ_omerc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6C177A58EB004C82C1 /* PJ_omerc.c */; };
+		46DDE44517A338F200A8528F /* PJ_wink1.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D92177A58EB004C82C1 /* PJ_wink1.c */; };
+		46DDE44617A338F200A8528F /* PJ_crast.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D22177A58EB004C82C1 /* PJ_crast.c */; };
+		46DDE44717A338F200A8528F /* PJ_denoy.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D26177A58EB004C82C1 /* PJ_denoy.c */; };
+		46DDE44817A338F200A8528F /* PJ_mbtfpq.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5B177A58EB004C82C1 /* PJ_mbtfpq.c */; };
+		46DDE44917A338F200A8528F /* PJ_tcea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D83177A58EB004C82C1 /* PJ_tcea.c */; };
+		46DDE44A17A338F200A8528F /* PJ_mbt_fps.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D59177A58EB004C82C1 /* PJ_mbt_fps.c */; };
+		46DDE44B17A338F200A8528F /* PJ_eck1.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D28177A58EB004C82C1 /* PJ_eck1.c */; };
+		46DDE44C17A338F200A8528F /* PJ_ortho.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6E177A58EB004C82C1 /* PJ_ortho.c */; };
+		46DDE44D17A338F200A8528F /* PJ_eck2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D29177A58EB004C82C1 /* PJ_eck2.c */; };
+		46DDE44E17A338F200A8528F /* pj_units.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D88177A58EB004C82C1 /* pj_units.c */; };
+		46DDE44F17A338F200A8528F /* PJ_fahey.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D33177A58EB004C82C1 /* PJ_fahey.c */; };
+		46DDE45017A338F200A8528F /* pj_phi2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D70177A58EB004C82C1 /* pj_phi2.c */; };
+		46DDE45117A338F200A8528F /* PJ_lcc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D51177A58EB004C82C1 /* PJ_lcc.c */; };
+		46DDE45217A338F200A8528F /* PJ_larr.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4E177A58EB004C82C1 /* PJ_larr.c */; };
+		46DDE45317A338F200A8528F /* pj_gridlist.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3F177A58EB004C82C1 /* pj_gridlist.c */; };
+		46DDE45417A338F200A8528F /* pj_errno.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D31177A58EB004C82C1 /* pj_errno.c */; };
+		46DDE45517A338F200A8528F /* pj_log.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D55177A58EB004C82C1 /* pj_log.c */; };
+		46DDE45617A338F200A8528F /* PJ_merc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5C177A58EB004C82C1 /* PJ_merc.c */; };
+		46DDE45717A338F200A8528F /* nad_intr.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF4177A58CE004C82C1 /* nad_intr.c */; };
+		46DDE45817A338F200A8528F /* pj_malloc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D58177A58EB004C82C1 /* pj_malloc.c */; };
+		46DDE45917A338F200A8528F /* PJ_vandg4.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8E177A58EB004C82C1 /* PJ_vandg4.c */; };
+		46DDE45A17A338F200A8528F /* PJ_eqc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2F177A58EB004C82C1 /* PJ_eqc.c */; };
+		46DDE45B17A338F200A8528F /* PJ_geos.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D39177A58EB004C82C1 /* PJ_geos.c */; };
+		46DDE45C17A338F200A8528F /* PJ_gn_sinu.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3B177A58EB004C82C1 /* PJ_gn_sinu.c */; };
+		46DDE45D17A338F200A8528F /* pj_pr_list.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D72177A58EB004C82C1 /* pj_pr_list.c */; };
+		46DDE45E17A338F200A8528F /* PJ_wag2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8F177A58EB004C82C1 /* PJ_wag2.c */; };
+		46DDE45F17A338F200A8528F /* PJ_poly.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D71177A58EB004C82C1 /* PJ_poly.c */; };
+		46DDE46017A338F200A8528F /* emess.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CD9177A5821004C82C1 /* emess.c */; };
+		46DDE46117A338F200A8528F /* pj_inv.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D48177A58EB004C82C1 /* pj_inv.c */; };
+		46DDE46217A338F200A8528F /* pj_latlong.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D50177A58EB004C82C1 /* pj_latlong.c */; };
+		46DDE46317A338F200A8528F /* PJ_imw_p.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D45177A58EB004C82C1 /* PJ_imw_p.c */; };
+		46DDE46417A338F200A8528F /* PJ_lcca.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D52177A58EB004C82C1 /* PJ_lcca.c */; };
+		46DDE46517A338F200A8528F /* PJ_airy.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF9177A58CE004C82C1 /* PJ_airy.c */; };
+		46DDE46617A338F200A8528F /* pj_msfn.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D61177A58EB004C82C1 /* pj_msfn.c */; };
+		46DDE46717A338F200A8528F /* dmstor.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CD8177A5821004C82C1 /* dmstor.c */; };
+		46DDE46817A338F200A8528F /* PJ_mod_ster.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5F177A58EB004C82C1 /* PJ_mod_ster.c */; };
+		46DDE46917A338F200A8528F /* PJ_tmerc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D84177A58EB004C82C1 /* PJ_tmerc.c */; };
+		46DDE46A17A338F200A8528F /* PJ_cc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1E177A58EB004C82C1 /* PJ_cc.c */; };
+		46DDE46B17A338F200A8528F /* PJ_gstmerc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D40177A58EB004C82C1 /* PJ_gstmerc.c */; };
+		46DDE46C17A338F200A8528F /* PJ_sconics.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7C177A58EB004C82C1 /* PJ_sconics.c */; };
+		46DDE46D17A338F200A8528F /* pj_datums.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D25177A58EB004C82C1 /* pj_datums.c */; };
+		46DDE46E17A338F200A8528F /* pj_auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D18177A58EB004C82C1 /* pj_auth.c */; };
+		46DDE46F17A338F200A8528F /* PJ_krovak.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4A177A58EB004C82C1 /* PJ_krovak.c */; };
+		46DDE47017A338F200A8528F /* PJ_putp4p.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D75177A58EB004C82C1 /* PJ_putp4p.c */; };
+		46DDE47117A338F200A8528F /* rtodms.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D95177A58EB004C82C1 /* rtodms.c */; };
+		46DDE47217A338F200A8528F /* PJ_tpeqd.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D85177A58EB004C82C1 /* PJ_tpeqd.c */; };
+		46DDE47317A338F200A8528F /* pj_gridcatalog.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188F17A2474100C28755 /* pj_gridcatalog.c */; };
+		46DDE47417A338F200A8528F /* pj_qsfn.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D78177A58EB004C82C1 /* pj_qsfn.c */; };
+		46DDE47517A338F200A8528F /* PJ_mbtfpp.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5A177A58EB004C82C1 /* PJ_mbtfpp.c */; };
+		46DDE47617A338F200A8528F /* PJ_putp5.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D76177A58EB004C82C1 /* PJ_putp5.c */; };
+		46DDE47717A338F200A8528F /* PJ_natearth.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D63177A58EB004C82C1 /* PJ_natearth.c */; };
+		46DDE47817A338F200A8528F /* PJ_mill.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5D177A58EB004C82C1 /* PJ_mill.c */; };
+		46DDE47917A338F200A8528F /* PJ_tcc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D82177A58EB004C82C1 /* PJ_tcc.c */; };
+		46DDE47A17A338F200A8528F /* jniproj.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CC6177A5740004C82C1 /* jniproj.c */; };
+		46DDE47B17A338F200A8528F /* geodesic.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188817A245BE00C28755 /* geodesic.c */; };
+		46DDE47C17A338F200A8528F /* pj_apply_gridshift.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CFB177A58CE004C82C1 /* pj_apply_gridshift.c */; };
+		46DDE47D17A338F200A8528F /* PJ_gins8.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3A177A58EB004C82C1 /* PJ_gins8.c */; };
+		46DDE47E17A338F200A8528F /* PJ_eck5.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2C177A58EB004C82C1 /* PJ_eck5.c */; };
+		46DDE47F17A338F200A8528F /* PJ_bonne.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1C177A58EB004C82C1 /* PJ_bonne.c */; };
+		46DDE48017A338F200A8528F /* PJ_healpix.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D43177A58EB004C82C1 /* PJ_healpix.c */; };
+		46DDE48117A338F200A8528F /* pj_gridinfo.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3E177A58EB004C82C1 /* pj_gridinfo.c */; };
+		46DDE48217A338F200A8528F /* gen_cheb.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CDA177A5821004C82C1 /* gen_cheb.c */; };
+		46DDE48317A338F200A8528F /* PJ_gnom.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3C177A58EB004C82C1 /* PJ_gnom.c */; };
+		46DDE48417A338F200A8528F /* pj_ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D23177A58EB004C82C1 /* pj_ctx.c */; };
+		46DDE48517A338F200A8528F /* pj_utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D8B177A58EB004C82C1 /* pj_utils.c */; };
+		46DDE48617A338F200A8528F /* PJ_nell_h.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D64177A58EB004C82C1 /* PJ_nell_h.c */; };
+		46DDE48717A338F200A8528F /* PJ_moll.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D60177A58EB004C82C1 /* PJ_moll.c */; };
+		46DDE48817A338F200A8528F /* pj_ell_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D2D177A58EB004C82C1 /* pj_ell_set.c */; };
+		46DDE48917A338F200A8528F /* PJ_cass.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D1D177A58EB004C82C1 /* PJ_cass.c */; };
+		46DDE48A17A338F200A8528F /* PJ_aea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CF7177A58CE004C82C1 /* PJ_aea.c */; };
+		46DDE48B17A338F200A8528F /* PJ_putp3.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D74177A58EB004C82C1 /* PJ_putp3.c */; };
+		46DDE48C17A338F200A8528F /* pj_gc_reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188E17A2474100C28755 /* pj_gc_reader.c */; };
+		46DDE48D17A338F200A8528F /* PJ_bacon.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D19177A58EB004C82C1 /* PJ_bacon.c */; };
+		46DDE48E17A338F200A8528F /* pj_initcache.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D47177A58EB004C82C1 /* pj_initcache.c */; };
+		46DDE48F17A338F200A8528F /* PJ_ob_tran.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D69177A58EB004C82C1 /* PJ_ob_tran.c */; };
+		46DDE49017A338F200A8528F /* PJ_gall.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D36177A58EB004C82C1 /* PJ_gall.c */; };
+		46DDE49117A338F200A8528F /* pj_factors.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D32177A58EB004C82C1 /* pj_factors.c */; };
+		46DDE49217A338F200A8528F /* PJ_sts.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D81177A58EB004C82C1 /* PJ_sts.c */; };
+		46DDE49317A338F200A8528F /* PJ_goode.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D3D177A58EB004C82C1 /* PJ_goode.c */; };
+		46DDE49417A338F200A8528F /* geocent.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CDB177A5821004C82C1 /* geocent.c */; };
+		46DDE49517A338F200A8528F /* PJ_hatano.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D42177A58EB004C82C1 /* PJ_hatano.c */; };
+		46DDE49617A338F200A8528F /* PJ_loxim.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D56177A58EB004C82C1 /* PJ_loxim.c */; };
+		46DDE49717A338F200A8528F /* vector1.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D96177A58EB004C82C1 /* vector1.c */; };
+		46DDE49817A338F200A8528F /* PJ_somerc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7D177A58EB004C82C1 /* PJ_somerc.c */; };
+		46DDE49917A338F200A8528F /* PJ_calcofi.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188A17A2468300C28755 /* PJ_calcofi.c */; };
+		46DDE49A17A338F200A8528F /* PJ_ocea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6A177A58EB004C82C1 /* PJ_ocea.c */; };
+		46DDE49B17A338F200A8528F /* PJ_collg.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D21177A58EB004C82C1 /* PJ_collg.c */; };
+		46DDE49C17A338F200A8528F /* PJ_wink2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D93177A58EB004C82C1 /* PJ_wink2.c */; };
+		46DDE49D17A338F200A8528F /* PJ_nzmg.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D68177A58EB004C82C1 /* PJ_nzmg.c */; };
+		46DDE49E17A338F200A8528F /* adjlon.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE5177A58CE004C82C1 /* adjlon.c */; };
+		46DDE49F17A338F200A8528F /* PJ_igh.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D44177A58EB004C82C1 /* PJ_igh.c */; };
+		46DDE4A017A338F200A8528F /* PJ_wag3.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D90177A58EB004C82C1 /* PJ_wag3.c */; };
+		46DDE4A117A338F200A8528F /* aasincos.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE4177A58CE004C82C1 /* aasincos.c */; };
+		46DDE4A217A338F200A8528F /* bchgen.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE7177A58CE004C82C1 /* bchgen.c */; };
+		46DDE4A317A338F200A8528F /* pj_param.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D6F177A58EB004C82C1 /* pj_param.c */; };
+		46DDE4A417A338F200A8528F /* pj_geocent.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D38177A58EB004C82C1 /* pj_geocent.c */; };
+		46DDE4A517A338F200A8528F /* geod_set.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CEE177A58CE004C82C1 /* geod_set.c */; };
+		46DDE4A617A338F200A8528F /* geod_interface.c in Sources */ = {isa = PBXBuildFile; fileRef = 469A188317A2456C00C28755 /* geod_interface.c */; };
+		46DDE4A717A338F200A8528F /* PJ_stere.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D7E177A58EB004C82C1 /* PJ_stere.c */; };
+		46DDE4A817A338F200A8528F /* PJ_eqdc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D30177A58EB004C82C1 /* PJ_eqdc.c */; };
+		46DDE4A917A338F200A8528F /* pj_zpoly1.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D94177A58EB004C82C1 /* pj_zpoly1.c */; };
+		46DDE4AA17A338F200A8528F /* pj_apply_vgridshift.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CFC177A58CE004C82C1 /* pj_apply_vgridshift.c */; };
+		46DDE4AB17A338F200A8528F /* proj_etmerc.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CE0177A584B004C82C1 /* proj_etmerc.c */; };
+		46DDE4AC17A338F200A8528F /* PJ_putp2.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D73177A58EB004C82C1 /* PJ_putp2.c */; };
+		46DDE4AD17A338F200A8528F /* PJ_laea.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D4C177A58EB004C82C1 /* PJ_laea.c */; };
+		46DDE4AE17A338F200A8528F /* pj_transform.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D86177A58EB004C82C1 /* pj_transform.c */; };
+		46DDE4AF17A338F200A8528F /* pj_mlfn.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D5E177A58EB004C82C1 /* pj_mlfn.c */; };
+		46DDE4B017A338F200A8528F /* PJ_chamb.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D20177A58EB004C82C1 /* PJ_chamb.c */; };
+		46DDE4B117A338F200A8528F /* PJ_nocol.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98D66177A58EB004C82C1 /* PJ_nocol.c */; };
+		46DDE4B417A338F200A8528F /* proj_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC8177A5740004C82C1 /* proj_api.h */; };
+		46DDE4B517A338F200A8528F /* geod_interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 469A188417A2456C00C28755 /* geod_interface.h */; };
+		46DDE4B617A338F200A8528F /* emess.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CEA177A58CE004C82C1 /* emess.h */; };
+		46DDE4B717A338F200A8528F /* projects.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CCE177A5740004C82C1 /* projects.h */; };
+		46DDE4B817A338F200A8528F /* org_proj4_Projections.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC7177A5740004C82C1 /* org_proj4_Projections.h */; };
+		46DDE4B917A338F200A8528F /* pj_list.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98D54177A58EB004C82C1 /* pj_list.h */; };
+		46DDE4BA17A338F200A8528F /* geocent.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CEB177A58CE004C82C1 /* geocent.h */; };
+		46DDE4BB17A338F200A8528F /* geodesic.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CF0177A58CE004C82C1 /* geodesic.h */; };
+		46DDE4BC17A338F200A8528F /* proj_config.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CD6177A578B004C82C1 /* proj_config.h */; };
 		46E98CCF177A5740004C82C1 /* jniproj.c in Sources */ = {isa = PBXBuildFile; fileRef = 46E98CC6177A5740004C82C1 /* jniproj.c */; };
 		46E98CD0177A5740004C82C1 /* org_proj4_Projections.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC7177A5740004C82C1 /* org_proj4_Projections.h */; };
 		46E98CD1177A5740004C82C1 /* proj_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E98CC8177A5740004C82C1 /* proj_api.h */; };
@@ -185,7 +353,8 @@
 		469A188C17A246F300C28755 /* pj_fileapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_fileapi.c; sourceTree = "<group>"; };
 		469A188E17A2474100C28755 /* pj_gc_reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_gc_reader.c; sourceTree = "<group>"; };
 		469A188F17A2474100C28755 /* pj_gridcatalog.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pj_gridcatalog.c; sourceTree = "<group>"; };
-		46E98CBE177A54BE004C82C1 /* libproj.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libproj.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DDE4C017A338F200A8528F /* libproj4.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libproj4.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E98CBE177A54BE004C82C1 /* libproj4.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libproj4.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E98CC6177A5740004C82C1 /* jniproj.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jniproj.c; sourceTree = "<group>"; };
 		46E98CC7177A5740004C82C1 /* org_proj4_Projections.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_proj4_Projections.h; sourceTree = "<group>"; };
 		46E98CC8177A5740004C82C1 /* proj_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proj_api.h; sourceTree = "<group>"; };
@@ -356,6 +525,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		46DDE4B217A338F200A8528F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46E98CBB177A54BE004C82C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,7 +567,8 @@
 		46E98CBF177A54BE004C82C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				46E98CBE177A54BE004C82C1 /* libproj.dylib */,
+				46E98CBE177A54BE004C82C1 /* libproj4.dylib */,
+				46DDE4C017A338F200A8528F /* libproj4.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -575,6 +752,22 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		46DDE4B317A338F200A8528F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DDE4B417A338F200A8528F /* proj_api.h in Headers */,
+				46DDE4B517A338F200A8528F /* geod_interface.h in Headers */,
+				46DDE4B617A338F200A8528F /* emess.h in Headers */,
+				46DDE4B717A338F200A8528F /* projects.h in Headers */,
+				46DDE4B817A338F200A8528F /* org_proj4_Projections.h in Headers */,
+				46DDE4B917A338F200A8528F /* pj_list.h in Headers */,
+				46DDE4BA17A338F200A8528F /* geocent.h in Headers */,
+				46DDE4BB17A338F200A8528F /* geodesic.h in Headers */,
+				46DDE4BC17A338F200A8528F /* proj_config.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46E98CBC177A54BE004C82C1 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,9 +787,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		46E98CBD177A54BE004C82C1 /* proj */ = {
+		46DDE41117A338F200A8528F /* proj4 static */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46E98CC2177A54BE004C82C1 /* Build configuration list for PBXNativeTarget "proj" */;
+			buildConfigurationList = 46DDE4BD17A338F200A8528F /* Build configuration list for PBXNativeTarget "proj4 static" */;
+			buildPhases = (
+				46DDE41217A338F200A8528F /* Sources */,
+				46DDE4B217A338F200A8528F /* Frameworks */,
+				46DDE4B317A338F200A8528F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "proj4 static";
+			productName = MacProj4;
+			productReference = 46DDE4C017A338F200A8528F /* libproj4.a */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		46E98CBD177A54BE004C82C1 /* proj4 dynamic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46E98CC2177A54BE004C82C1 /* Build configuration list for PBXNativeTarget "proj4 dynamic" */;
 			buildPhases = (
 				46E98CBA177A54BE004C82C1 /* Sources */,
 				46E98CBB177A54BE004C82C1 /* Frameworks */,
@@ -606,9 +816,9 @@
 			);
 			dependencies = (
 			);
-			name = proj;
+			name = "proj4 dynamic";
 			productName = MacProj4;
-			productReference = 46E98CBE177A54BE004C82C1 /* libproj.dylib */;
+			productReference = 46E98CBE177A54BE004C82C1 /* libproj4.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -632,12 +842,179 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				46E98CBD177A54BE004C82C1 /* proj */,
+				46E98CBD177A54BE004C82C1 /* proj4 dynamic */,
+				46DDE41117A338F200A8528F /* proj4 static */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		46DDE41217A338F200A8528F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46DDE41317A338F200A8528F /* pj_strerrno.c in Sources */,
+				46DDE41417A338F200A8528F /* pj_fwd.c in Sources */,
+				46DDE41517A338F200A8528F /* pj_list.c in Sources */,
+				46DDE41617A338F200A8528F /* PJ_boggs.c in Sources */,
+				46DDE41717A338F200A8528F /* PJ_nell.c in Sources */,
+				46DDE41817A338F200A8528F /* PJ_bipc.c in Sources */,
+				46DDE41917A338F200A8528F /* proj_mdist.c in Sources */,
+				46DDE41A17A338F200A8528F /* PJ_lask.c in Sources */,
+				46DDE41B17A338F200A8528F /* PJ_vandg.c in Sources */,
+				46DDE41C17A338F200A8528F /* PJ_lsat.c in Sources */,
+				46DDE41D17A338F200A8528F /* pj_release.c in Sources */,
+				46DDE41E17A338F200A8528F /* pj_open_lib.c in Sources */,
+				46DDE41F17A338F200A8528F /* pj_mutex.c in Sources */,
+				46DDE42017A338F200A8528F /* pj_ellps.c in Sources */,
+				46DDE42117A338F200A8528F /* pj_tsfn.c in Sources */,
+				46DDE42217A338F200A8528F /* pj_datum_set.c in Sources */,
+				46DDE42317A338F200A8528F /* PJ_rpoly.c in Sources */,
+				46DDE42417A338F200A8528F /* PJ_isea.c in Sources */,
+				46DDE42517A338F200A8528F /* pj_init.c in Sources */,
+				46DDE42617A338F200A8528F /* PJ_eck3.c in Sources */,
+				46DDE42717A338F200A8528F /* PJ_aeqd.c in Sources */,
+				46DDE42817A338F200A8528F /* bch2bps.c in Sources */,
+				46DDE42917A338F200A8528F /* PJ_urmfps.c in Sources */,
+				46DDE42A17A338F200A8528F /* PJ_putp6.c in Sources */,
+				46DDE42B17A338F200A8528F /* nad_cvt.c in Sources */,
+				46DDE42C17A338F200A8528F /* biveval.c in Sources */,
+				46DDE42D17A338F200A8528F /* PJ_eck4.c in Sources */,
+				46DDE42E17A338F200A8528F /* PJ_sterea.c in Sources */,
+				46DDE42F17A338F200A8528F /* pj_gauss.c in Sources */,
+				46DDE43017A338F200A8528F /* proj_rouss.c in Sources */,
+				46DDE43117A338F200A8528F /* PJ_oea.c in Sources */,
+				46DDE43217A338F200A8528F /* PJ_aitoff.c in Sources */,
+				46DDE43317A338F200A8528F /* p_series.c in Sources */,
+				46DDE43417A338F200A8528F /* PJ_vandg2.c in Sources */,
+				46DDE43517A338F200A8528F /* PJ_robin.c in Sources */,
+				46DDE43617A338F200A8528F /* PJ_cea.c in Sources */,
+				46DDE43717A338F200A8528F /* proj.c in Sources */,
+				46DDE43817A338F200A8528F /* pj_fileapi.c in Sources */,
+				46DDE43917A338F200A8528F /* PJ_wag7.c in Sources */,
+				46DDE43A17A338F200A8528F /* PJ_urm5.c in Sources */,
+				46DDE43B17A338F200A8528F /* PJ_august.c in Sources */,
+				46DDE43C17A338F200A8528F /* PJ_nsper.c in Sources */,
+				46DDE43D17A338F200A8528F /* pj_deriv.c in Sources */,
+				46DDE43E17A338F200A8528F /* PJ_fouc_s.c in Sources */,
+				46DDE43F17A338F200A8528F /* nad_init.c in Sources */,
+				46DDE44017A338F200A8528F /* PJ_labrd.c in Sources */,
+				46DDE44117A338F200A8528F /* mk_cheby.c in Sources */,
+				46DDE44217A338F200A8528F /* PJ_lagrng.c in Sources */,
+				46DDE44317A338F200A8528F /* PJ_hammer.c in Sources */,
+				46DDE44417A338F200A8528F /* PJ_omerc.c in Sources */,
+				46DDE44517A338F200A8528F /* PJ_wink1.c in Sources */,
+				46DDE44617A338F200A8528F /* PJ_crast.c in Sources */,
+				46DDE44717A338F200A8528F /* PJ_denoy.c in Sources */,
+				46DDE44817A338F200A8528F /* PJ_mbtfpq.c in Sources */,
+				46DDE44917A338F200A8528F /* PJ_tcea.c in Sources */,
+				46DDE44A17A338F200A8528F /* PJ_mbt_fps.c in Sources */,
+				46DDE44B17A338F200A8528F /* PJ_eck1.c in Sources */,
+				46DDE44C17A338F200A8528F /* PJ_ortho.c in Sources */,
+				46DDE44D17A338F200A8528F /* PJ_eck2.c in Sources */,
+				46DDE44E17A338F200A8528F /* pj_units.c in Sources */,
+				46DDE44F17A338F200A8528F /* PJ_fahey.c in Sources */,
+				46DDE45017A338F200A8528F /* pj_phi2.c in Sources */,
+				46DDE45117A338F200A8528F /* PJ_lcc.c in Sources */,
+				46DDE45217A338F200A8528F /* PJ_larr.c in Sources */,
+				46DDE45317A338F200A8528F /* pj_gridlist.c in Sources */,
+				46DDE45417A338F200A8528F /* pj_errno.c in Sources */,
+				46DDE45517A338F200A8528F /* pj_log.c in Sources */,
+				46DDE45617A338F200A8528F /* PJ_merc.c in Sources */,
+				46DDE45717A338F200A8528F /* nad_intr.c in Sources */,
+				46DDE45817A338F200A8528F /* pj_malloc.c in Sources */,
+				46DDE45917A338F200A8528F /* PJ_vandg4.c in Sources */,
+				46DDE45A17A338F200A8528F /* PJ_eqc.c in Sources */,
+				46DDE45B17A338F200A8528F /* PJ_geos.c in Sources */,
+				46DDE45C17A338F200A8528F /* PJ_gn_sinu.c in Sources */,
+				46DDE45D17A338F200A8528F /* pj_pr_list.c in Sources */,
+				46DDE45E17A338F200A8528F /* PJ_wag2.c in Sources */,
+				46DDE45F17A338F200A8528F /* PJ_poly.c in Sources */,
+				46DDE46017A338F200A8528F /* emess.c in Sources */,
+				46DDE46117A338F200A8528F /* pj_inv.c in Sources */,
+				46DDE46217A338F200A8528F /* pj_latlong.c in Sources */,
+				46DDE46317A338F200A8528F /* PJ_imw_p.c in Sources */,
+				46DDE46417A338F200A8528F /* PJ_lcca.c in Sources */,
+				46DDE46517A338F200A8528F /* PJ_airy.c in Sources */,
+				46DDE46617A338F200A8528F /* pj_msfn.c in Sources */,
+				46DDE46717A338F200A8528F /* dmstor.c in Sources */,
+				46DDE46817A338F200A8528F /* PJ_mod_ster.c in Sources */,
+				46DDE46917A338F200A8528F /* PJ_tmerc.c in Sources */,
+				46DDE46A17A338F200A8528F /* PJ_cc.c in Sources */,
+				46DDE46B17A338F200A8528F /* PJ_gstmerc.c in Sources */,
+				46DDE46C17A338F200A8528F /* PJ_sconics.c in Sources */,
+				46DDE46D17A338F200A8528F /* pj_datums.c in Sources */,
+				46DDE46E17A338F200A8528F /* pj_auth.c in Sources */,
+				46DDE46F17A338F200A8528F /* PJ_krovak.c in Sources */,
+				46DDE47017A338F200A8528F /* PJ_putp4p.c in Sources */,
+				46DDE47117A338F200A8528F /* rtodms.c in Sources */,
+				46DDE47217A338F200A8528F /* PJ_tpeqd.c in Sources */,
+				46DDE47317A338F200A8528F /* pj_gridcatalog.c in Sources */,
+				46DDE47417A338F200A8528F /* pj_qsfn.c in Sources */,
+				46DDE47517A338F200A8528F /* PJ_mbtfpp.c in Sources */,
+				46DDE47617A338F200A8528F /* PJ_putp5.c in Sources */,
+				46DDE47717A338F200A8528F /* PJ_natearth.c in Sources */,
+				46DDE47817A338F200A8528F /* PJ_mill.c in Sources */,
+				46DDE47917A338F200A8528F /* PJ_tcc.c in Sources */,
+				46DDE47A17A338F200A8528F /* jniproj.c in Sources */,
+				46DDE47B17A338F200A8528F /* geodesic.c in Sources */,
+				46DDE47C17A338F200A8528F /* pj_apply_gridshift.c in Sources */,
+				46DDE47D17A338F200A8528F /* PJ_gins8.c in Sources */,
+				46DDE47E17A338F200A8528F /* PJ_eck5.c in Sources */,
+				46DDE47F17A338F200A8528F /* PJ_bonne.c in Sources */,
+				46DDE48017A338F200A8528F /* PJ_healpix.c in Sources */,
+				46DDE48117A338F200A8528F /* pj_gridinfo.c in Sources */,
+				46DDE48217A338F200A8528F /* gen_cheb.c in Sources */,
+				46DDE48317A338F200A8528F /* PJ_gnom.c in Sources */,
+				46DDE48417A338F200A8528F /* pj_ctx.c in Sources */,
+				46DDE48517A338F200A8528F /* pj_utils.c in Sources */,
+				46DDE48617A338F200A8528F /* PJ_nell_h.c in Sources */,
+				46DDE48717A338F200A8528F /* PJ_moll.c in Sources */,
+				46DDE48817A338F200A8528F /* pj_ell_set.c in Sources */,
+				46DDE48917A338F200A8528F /* PJ_cass.c in Sources */,
+				46DDE48A17A338F200A8528F /* PJ_aea.c in Sources */,
+				46DDE48B17A338F200A8528F /* PJ_putp3.c in Sources */,
+				46DDE48C17A338F200A8528F /* pj_gc_reader.c in Sources */,
+				46DDE48D17A338F200A8528F /* PJ_bacon.c in Sources */,
+				46DDE48E17A338F200A8528F /* pj_initcache.c in Sources */,
+				46DDE48F17A338F200A8528F /* PJ_ob_tran.c in Sources */,
+				46DDE49017A338F200A8528F /* PJ_gall.c in Sources */,
+				46DDE49117A338F200A8528F /* pj_factors.c in Sources */,
+				46DDE49217A338F200A8528F /* PJ_sts.c in Sources */,
+				46DDE49317A338F200A8528F /* PJ_goode.c in Sources */,
+				46DDE49417A338F200A8528F /* geocent.c in Sources */,
+				46DDE49517A338F200A8528F /* PJ_hatano.c in Sources */,
+				46DDE49617A338F200A8528F /* PJ_loxim.c in Sources */,
+				46DDE49717A338F200A8528F /* vector1.c in Sources */,
+				46DDE49817A338F200A8528F /* PJ_somerc.c in Sources */,
+				46DDE49917A338F200A8528F /* PJ_calcofi.c in Sources */,
+				46DDE49A17A338F200A8528F /* PJ_ocea.c in Sources */,
+				46DDE49B17A338F200A8528F /* PJ_collg.c in Sources */,
+				46DDE49C17A338F200A8528F /* PJ_wink2.c in Sources */,
+				46DDE49D17A338F200A8528F /* PJ_nzmg.c in Sources */,
+				46DDE49E17A338F200A8528F /* adjlon.c in Sources */,
+				46DDE49F17A338F200A8528F /* PJ_igh.c in Sources */,
+				46DDE4A017A338F200A8528F /* PJ_wag3.c in Sources */,
+				46DDE4A117A338F200A8528F /* aasincos.c in Sources */,
+				46DDE4A217A338F200A8528F /* bchgen.c in Sources */,
+				46DDE4A317A338F200A8528F /* pj_param.c in Sources */,
+				46DDE4A417A338F200A8528F /* pj_geocent.c in Sources */,
+				46DDE4A517A338F200A8528F /* geod_set.c in Sources */,
+				46DDE4A617A338F200A8528F /* geod_interface.c in Sources */,
+				46DDE4A717A338F200A8528F /* PJ_stere.c in Sources */,
+				46DDE4A817A338F200A8528F /* PJ_eqdc.c in Sources */,
+				46DDE4A917A338F200A8528F /* pj_zpoly1.c in Sources */,
+				46DDE4AA17A338F200A8528F /* pj_apply_vgridshift.c in Sources */,
+				46DDE4AB17A338F200A8528F /* proj_etmerc.c in Sources */,
+				46DDE4AC17A338F200A8528F /* PJ_putp2.c in Sources */,
+				46DDE4AD17A338F200A8528F /* PJ_laea.c in Sources */,
+				46DDE4AE17A338F200A8528F /* pj_transform.c in Sources */,
+				46DDE4AF17A338F200A8528F /* pj_mlfn.c in Sources */,
+				46DDE4B017A338F200A8528F /* PJ_chamb.c in Sources */,
+				46DDE4B117A338F200A8528F /* PJ_nocol.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46E98CBA177A54BE004C82C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -807,6 +1184,30 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		46DDE4BE17A338F200A8528F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = proj4;
+			};
+			name = Debug;
+		};
+		46DDE4BF17A338F200A8528F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				EXECUTABLE_EXTENSION = a;
+				EXECUTABLE_PREFIX = lib;
+				INSTALL_PATH = "@rpath";
+				LD_DYLIB_INSTALL_NAME = "";
+				MACH_O_TYPE = staticlib;
+				PRODUCT_NAME = proj4;
+			};
+			name = Release;
+		};
 		46E98CC0177A54BE004C82C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -884,7 +1285,8 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/libproj4.dylib";
+				PRODUCT_NAME = proj4;
 			};
 			name = Debug;
 		};
@@ -893,13 +1295,23 @@
 			buildSettings = {
 				EXECUTABLE_PREFIX = lib;
 				INSTALL_PATH = "@rpath";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LD_DYLIB_INSTALL_NAME = "@executable_path/libproj4.dylib";
+				PRODUCT_NAME = proj4;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		46DDE4BD17A338F200A8528F /* Build configuration list for PBXNativeTarget "proj4 static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46DDE4BE17A338F200A8528F /* Debug */,
+				46DDE4BF17A338F200A8528F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46E98CB9177A54BE004C82C1 /* Build configuration list for PBXProject "MacProj4" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -909,7 +1321,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46E98CC2177A54BE004C82C1 /* Build configuration list for PBXNativeTarget "proj" */ = {
+		46E98CC2177A54BE004C82C1 /* Build configuration list for PBXNativeTarget "proj4 dynamic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46E98CC3177A54BE004C82C1 /* Debug */,
